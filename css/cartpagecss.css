@@ -1,0 +1,332 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0;
+	padding:0;
+	font-size:100%;
+	}
+body,html{
+	width:100%;
+	height:100%;
+	}
+/*货车页面样式*/
+article{
+	width:100%;
+	height:100vh;
+	margin:0 auto;
+	min-width:320px;
+	max-width:1200px;
+	position:relative;
+	z-index:1;
+	}
+/*货车页面头部*/
+ header{
+	width:100%;
+	height:22vh;
+	background:url(../image/bgimg.png) no-repeat;
+	background-size:100% 100%;
+	display:flex;
+	flex-flow:column wrap;
+	align-items:center;
+	}
+
+/*头部的手机小图标样式*/
+.topdiv{
+	width:100%;
+	height:5vh;
+	display:flex;
+	justify-content:space-between;
+	}
+.topdiv p{
+	width:34vw;
+	max-width:120px;
+	min-width:100px;
+	height:5vh;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	}
+.topdiv p:last-child{
+	width:20vw;
+	}
+.topdiv span{
+	font-size:12px;
+	color:#FFF;
+	}
+.topdiv p img{
+	width:25px;
+	height:20px;
+	}
+/*头部的第二部分*/
+header ul{
+	width:100%;
+	height:6vh;
+	list-style:none;
+	display:flex;
+	justify-content:space-around;
+	}
+header ul li{
+	width:27vw;
+	max-width:120px;
+	min-width:100px;
+	height:6vh;
+	color:#FFF;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	}
+header ul li:first-child{
+	font-size:14px;
+	justify-content:flex-start;
+    }
+header ul li:last-child{
+	
+	justify-content:flex-end;
+    }
+header ul li .addimg{
+	width:25px;
+	height:25px;
+	}
+/*搜索框样式*/
+ header .searchbox{
+	width:84vw;
+	min-width:280px;
+	max-width:1000px;
+	height:5.5vh;
+	background:#FFF;
+	border-radius:30px;
+	display:flex;
+	justify-content:flex-end;
+	align-items:center;
+	margin-top:3vh;
+	}
+ header .searchbox img{
+	width:6vw;
+	min-width:10px;
+	max-width:30px;
+	height:3vh;
+	}
+header .searchbox input{
+	width:60vw;
+	height:5vh;
+	min-width:250px;
+	max-width:900px;
+	font-size:20%;
+	border:none;
+	border-radius:30px;
+	color:#999;
+	}
+/*购物车页面中间部分样式*/
+ .middlesection{
+	width:100%;
+	height:68vh;
+	min-width:320px;
+	max-width:1200px;
+	background:#FFF;
+	list-style:none;
+	display:flex;
+	flex-flow:column wrap;
+	align-items:center;
+	}
+ .middlesection li{
+	width:84vw;
+	height:13.6vh;
+	min-width:280px;
+	max-width:1000px;
+	border-bottom:1px solid #ccc;
+	box-sizing:border-box;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	}
+ .middlesection li:last-child{
+	border-bottom:none;
+	}
+ .middlesection li div{
+	width:70vw;
+	height:8vh;
+	display:flex;
+	flex-flow:column wrap;
+	justify-content:space-between;
+	}
+ .middlesection li div h3{
+	color:#666;
+	}
+ .middlesection li div P{
+	font-size:15%;
+	color:#999;
+	display:flex;
+	justify-content:flex-start;
+	align-items:center;
+	}
+ .middlesection li div p img{
+	width:5vw;
+	min-width:15px;
+	max-width:30px;
+	height:3vh;
+	}
+ .middlesection li img{
+	width:9vw;
+	min-width:25px;
+	max-width:40px;
+	height:4vh;
+	}
+/*货车页面尾部样式*/
+ .footsection{
+	width:100%;
+	height:10vh;
+	background:#f2f2f2;
+	display:flex;
+	justify-content:space-between;
+	align-items:flex-end;
+	}
+ .footsection p{
+	width:62vw;
+	height:8vh;
+	padding-left:8vw;
+	background:#f7f7f7;
+	color:#666;
+	display:flex;
+	align-items:center;
+	justify-content:flex-start;
+	font-size:14px;
+	}
+ .footsection p span{
+	width:10vw;
+	min-width:50px;
+	max-width:100px;
+	height:4vh;
+	background:#C00;
+	border-radius:18px;
+	color:#FFF;
+	font-weight:bold;
+	text-align:center;
+	line-height:4vh;
+	}
+ .footsection input{
+	width:30vw;
+	height:8vh;
+	background:#16dab6;
+	color:#FFF;
+	border:none;
+	font-weight:bold;
+	}
+/*覆盖层样式*/
+section{
+	width:100%;
+	min-width:320px;
+	max-width:1200px;
+	height:41vh;
+	position:absolute;
+	z-index:2;
+	bottom:0;
+	left:0;
+	background:#FFF;
+	box-shadow:5px -5px 5px #f2f2f2;
+	display:flex;
+	flex-flow:column wrap;
+	align-items:center;
+	}
+section .sectionbox{
+	width:84vw;
+	min-width:280px;
+	max-width:1000px;
+	height:10vh;
+	display:flex;
+	justify-content:flex-start;
+	align-items:center;
+	}
+.sectionbox .sectiontxt{
+	width:15vw;
+	min-width:40px;
+	max-width:100px;
+	height:5vh;
+	color:#333;
+	line-height:2.5em;
+	font-size:0.8em;
+	font-weight:bold;
+	}
+.sectionbox .sectionnumber{
+	width:30vw;
+	min-width:180px;
+	max-width:300px;
+	height:5vh;
+	display:flex;
+	justify-content:flex-start;
+	border:1px solid #CCC;
+	}
+.sectionbox .sectionnumber .sectionspan{
+	width:8vw;
+	min-width:60px;
+	max-width:100px;
+	height:5vh;
+	text-align:center;
+	line-height:2em;
+	}
+.sectionbox .sectionnumber .secondspan{
+	width:14vw;
+	min-width:60px;
+	max-width:100px;
+	height:5vh;
+	border-left:1px solid #CCC;
+	border-right:1px solid #CCC;
+	text-align:center;
+	line-height:2em;
+	}
+section progress{
+	width:84vw;
+	min-width:280px;
+	max-width:1000px;
+	height:2vh;
+	border:1px solid #CCC;
+	}
+section .function{
+	width:84vw;
+    min-width:280px;
+	max-width:1000px;
+	height:4vh;
+	color:#333;
+	font-size:0.8em;
+	font-weight:bold;
+	line-height:3em;
+	}
+section .sectionul{
+	width:84vw;
+    min-width:280px;
+	max-width:1000px;
+	height:16vh;
+	list-style:none;
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	list-style:none;
+	}
+section .sectionul li{
+	width:20vw;
+	max-width:100px;
+	max-height:100px;
+	height:20vw;
+	border-radius:50%;
+	border:1px solid #CCC;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	color:#666;
+	font-weight:bold;
+	}
+section .sectionul li:hover{
+	background:#f6ad10;
+	color:#FFF;
+	}
+section input{
+	width:84vw;
+	min-width:280px;
+	max-width:1000px;
+	height:6vh;
+	border-radius:30px;
+	background:#0cdab4;
+	color:#FFF;
+	border:none;
+	text-align:center;
+	}

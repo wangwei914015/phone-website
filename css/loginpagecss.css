@@ -1,0 +1,184 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+	font-size:100%;
+	}
+body,html{
+	width:100%;
+	height:100%;
+	}
+body{
+	font-size:62.5%;
+	}
+/*登录页面样式*/
+article{
+	width:100vw;
+	height:100vh;
+	margin:0 auto;
+	min-width:320px;
+	max-width:1200px;
+	background:#19d8b9 url(../image/bgimg3.png) bottom no-repeat;
+	background-size:100% 20%;
+	}
+/*登录页面头部*/
+header{
+	width:100%;
+	height:18vh;
+	display:flex;
+	flex-flow:column wrap;
+	align-items:center;
+	}
+/*头部的手机小图标样式*/
+.topdiv{
+	width:100%;
+	height:5vh;
+	display:flex;
+	justify-content:space-between;
+	}
+.topdiv p{
+	width:34vw;
+	max-width:120px;
+	min-width:100px;
+	height:5vh;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	}
+.topdiv p:last-child{
+	width:20vw;
+	}
+.topdiv span{
+	font-size:12px;
+	color:#FFF;
+	}
+.topdiv p img{
+	width:25px;
+	height:20px;
+	}
+/*头部的第二部分*/
+header ul{
+	width:100%;
+	height:6vh;
+	list-style:none;
+	display:flex;
+	justify-content:space-around;
+	}
+header ul li{
+	width:27vw;
+	max-width:120px;
+	min-width:100px;
+	height:6vh;
+	color:#FFF;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-size:1.5em;
+	}
+header ul li:last-child{
+	justify-content:flex-end;
+    }
+/*登录页面中间部分*/
+section{
+	width:100%;
+	height:38vh;
+	min-width:320px;
+	max-width:1200px;
+	display:flex;
+	flex-flow:column wrap;
+	justify-content:space-between;
+	align-items:center;
+	}
+section img{
+	width:20vw;
+	min-width:60px;
+	min-height:40px;
+	max-height:100px;
+	max-width:100px;
+	height:10vh;
+	border-radius:50%;
+	border:3px solid #05ecb8;
+	}
+section p{
+	height:5vh;
+	font-family:'LiDeBiao-Xing3b54d27d0519557';
+	font-size:1.2em;
+	color:#FFF;
+	line-height:1.7em;
+	}
+section p:first-of-type{
+	font-size:2em;
+	}
+section p:last-of-type{
+	line-height:2.3em;
+	}
+section .inputbox{
+	width:84vw;
+	min-width:280px;
+	max-width:1000px;
+	height:16vh;
+	border-radius:10px;
+	background:#FFF;
+	}
+section .inputbox div{
+	height:8vh;
+	border-bottom:2px solid #f0f0f0;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	}
+section .inputbox div:last-child{
+	border-bottom:none;
+	}
+section .inputbox div img{
+	width:8vw;
+	min-width:30px;
+	min-height:20px;
+	max-height:40px;
+	max-width:50px;
+	height:5vh;
+	border:none;
+	}
+section .inputbox div input{
+	width:67vw;
+	min-width:240px;
+	max-width:900px;
+	height:6vh;
+	border:none;
+	color:#999;
+	}
+/*登录页面尾部部分*/
+footer{
+	width:100%;
+	min-wideth:320px;
+	max-width:1200px;
+	height:18vh;
+	display:flex;
+	flex-flow:column wrap;
+	justify-content:flex-end;
+	align-items:center;
+	}
+footer button{
+	width:38vw;
+	min-width:170px;
+	max-width:600px;
+	height:6vh;
+	border:2px solid #FFF;
+	border-radius:10vw;
+	color:#FFF;
+	background:none;
+	font-size:2em
+	}
+footer p{
+	width:20vw;
+	height:5vh;
+	min-width:70px;
+	max-width:100px;
+	color:#FFF;
+	border-bottom:1px solid #FFF;
+	display:flex;
+	justify-content:center;
+	align-items:flex-end;
+	font-size:1.5em;
+	}

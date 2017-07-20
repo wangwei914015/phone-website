@@ -1,0 +1,383 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+	font-size:100%;
+	}
+body,html{
+	width:100%;
+	height:100%;
+	}
+/*商贸页面样式*/
+article{
+	width:100%;
+	height:100vh;
+	margin:0 auto;
+	min-width:320px;
+	max-width:1200px;
+	}
+/*商贸页面头部*/
+ header{
+	width:100%;
+	height:22vh;
+	background:#04c1a5;
+	display:flex;
+	flex-flow:column wrap;
+	align-items:center;
+	}
+
+/*头部的手机小图标样式*/
+.topdiv{
+	width:100%;
+	height:5vh;
+	display:flex;
+	justify-content:space-between;
+	}
+.topdiv p{
+	width:34vw;
+	height:5vh;
+	max-width:120px;
+	min-width:100px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	}
+.topdiv p:last-child{
+	width:20vw;
+	}
+.topdiv span{
+	font-size:12px;
+	color:#FFF;
+	}
+.topdiv p img{
+	width:25px;
+	height:20px;
+	}
+/*头部的第二部分*/
+header ul{
+	width:100%;
+	height:6vh;
+	list-style:none;
+	display:flex;
+	justify-content:space-around;
+	}
+header ul li{
+	width:27vw;
+	height:6vh;
+	max-width:120px;
+	min-width:100px;
+	color:#FFF;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	}
+header ul li:first-child{
+	font-size:14px;
+	justify-content:flex-start;
+    }
+header ul li:last-child{
+	
+	justify-content:flex-end;
+    }
+header ul li .addimg{
+	width:25px;
+	height:25px;
+	}
+/*中间部分样式*/
+section{
+	width:100%;
+	min-width:320px;
+	max-width:1200px;
+	height:70vh;
+	background:#efe6e7;
+	position:relative;
+	z-index:1;
+	}
+.firstdiv{
+	width:64vw;
+	min-width:200px;
+	max-width:800px;
+	height:58vh;
+	border-radius:5%;
+	background:#f1f2f4;
+	position:absolute;
+	z-index:1;
+	top:-8vh;
+	left:16vw;
+	}
+.seconddiv{
+	width:74vw;
+	min-width:240px;
+	max-width:900px;
+	height:56vh;
+	border-radius:5%;
+	background:#f2fbfa;
+	position:absolute;
+	z-index:2;
+	top:-8vh;
+	left:12vw;
+	}
+.thirhdiv{
+	width:84vw;
+	min-width:280px;
+	max-width:1000px;
+	height:auto;
+	border-radius:5%;
+	background:#fff;
+	position:absolute;
+	z-index:3;
+	top:-8vh;
+	left:7vw;
+	display:flex;
+	flex-flow:column wrap;
+	align-items:center;
+	justify-content:center;
+	}
+section .thirhdiv button{
+	width:22vw;
+	height:22vw;
+	max-width:120px;
+	min-width:50px;
+	min-height:50px;
+	max-height:120px;
+	border-radius:50%;
+	border:none;
+	background:#e3c610;
+	color:#FFF;
+	font-weight:bold;
+	position:absolute;
+	z-index:3;
+	bottom:-8%;
+	left:40%;
+	}
+.thirhdiv .newsdiv{
+	width:78vw;
+	min-width:250px;
+	max-width:900px;
+	height:7vh;
+	display:flex;
+	justify-content:space-around;
+	align-items:flex-end;
+	}
+.newsdiv p{
+	width:7vw;
+	min-width:15px;
+	min-height:15px;
+	max-height:30px;
+	max-width:30px;
+	height:4vh;
+	border-radius:50%;
+	border:1px solid #0bf3b9;
+	text-align:center;
+	color:#FFF;
+	background:#0bf3b9;
+	}
+.newsdiv h3{
+	width:55vw;
+	min-height:15px;
+	max-height:30px;
+	height:5vh;
+	color:#333;
+	line-height:1.8em;
+	}
+.newsdiv p:last-child{
+	color:#0bf3b9;
+	background:#FFF;
+	border:none;
+	transform:rotate(90deg);
+	font-weight:bold;
+	}
+.thirhdiv .newsul{
+	list-style:none;
+	width:69vw;
+	min-width:210px;
+	max-width:870px;
+	height:34vh;
+	border-left:1px solid #0bf3b9;
+	display:flex;
+	flex-flow:column wrap;
+	align-items:center;
+	}
+.newsul li{
+	width:63vw;
+	min-width:180px;
+	max-width:800px;
+	height:7vh;
+	border-bottom:1px solid #e7e7e7;
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	}
+.newsul li img{
+	width:8vw;
+	min-width:20px;
+	max-width:35px;
+	max-height:20px;
+	min-height:10px;
+	height:4vh;
+	}
+.newsul li input{
+	width:50vw;
+	height:5vh;
+	color:#999;
+	border:none;
+	font-size:0.8em;
+	background:#FFF;
+	}
+.thirhdiv .newsdiv:nth-of-type(2){
+	align-items:flex-start;
+	}
+/*送货信息样式*/
+.newsbox{
+	width:63vw;
+	min-width:250px;
+	max-width:900px;
+	height:31vh;
+	background:#FFF;
+	display:flex;
+	flex-flow:column wrap;
+	align-items:center;
+	}
+.newsbox .sectionbox{
+	width:63vw;
+	min-width:180px;
+	max-width:800px;
+	height:7vh;
+	display:flex;
+	justify-content:flex-start;
+	align-items:center;
+	}
+.sectionbox .sectiontxt{
+	width:15vw;
+	min-width:50px;
+	max-width:120px;
+	height:5vh;
+	color:#333;
+	line-height:2.5em;
+	font-size:0.8em;
+	font-weight:bold;
+	}
+.sectionbox .sectionnumber{
+	width:30vw;
+	min-width:120px;
+	max-width:300px;
+	height:5vh;
+	display:flex;
+	justify-content:flex-start;
+	border:1px solid #CCC;
+	}
+.sectionbox .sectionnumber .sectionspan{
+	width:8vw;
+	min-width:40px;
+	max-width:100px;
+	height:5vh;
+	text-align:center;
+	line-height:2em;
+	}
+.sectionbox .sectionnumber .secondspan{
+	width:14vw;
+	min-width:40px;
+	max-width:100px;
+	height:5vh;
+	border-left:1px solid #CCC;
+	border-right:1px solid #CCC;
+	text-align:center;
+	line-height:2em;
+	}
+.newsbox progress{
+	width:63vw;
+	min-width:180px;
+	max-width:800px;
+	height:2vh;
+	border:1px solid #CCC;
+	}
+.newsbox .function{
+	width:63vw;
+	min-width:180px;
+	max-width:800px;
+	height:4vh;
+	color:#333;
+	font-size:0.8em;
+	font-weight:bold;
+	line-height:3em;
+	}
+.newsbox .sectionul{
+	width:63vw;
+	min-width:180px;
+	max-width:800px;
+	height:12vh;
+	list-style:none;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	list-style:none;
+	}
+.newsbox .sectionul li{
+	width:21vw;
+	min-width:60px;
+	max-width:150px;
+	height:6vh;
+	border:1px solid #CCC;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	color:#666;
+	font-weight:bold;
+	font-size:0.8em;
+	}
+.newsbox .sectionul li:first-child{
+	border-top-left-radius:10%;
+	border-bottom-left-radius:10%;
+	}
+.newsbox .sectionul li:nth-of-type(2){
+	border-radius:none;
+	border-top:1px solid #CCC;
+	border-bottom:1px solid #CCC;
+	}
+.newsbox .sectionul li:last-child{
+	border-top-right-radius:10%;
+	border-bottom-right-radius:10%;
+	}
+/*商贸页面尾部样式*/
+ footer{
+	width:100%;
+	min-width:320px;
+	max-width:1200px;
+	height:8vh;
+	background:#efefef;
+	display:flex;
+	justify-content:space-between;
+	align-items:flex-end;
+	}
+ footer p{
+	width:62vw;
+	height:8vh;
+	padding-left:8vw;
+	background:#f7f7f7;
+	color:#666;
+	display:flex;
+	align-items:center;
+	justify-content:flex-start;
+	font-size:14px;
+	}
+ footer p span{
+	width:10vw;
+	height:4vh;
+	min-width:50px;
+	max-width:100px;
+	background:#C00;
+	border-radius:18px;
+	color:#FFF;
+	font-weight:bold;
+	text-align:center;
+	line-height:4vh;
+	}
+ footer input{
+	width:30vw;
+	height:8vh;
+	background:#16dab6;
+	color:#FFF;
+	border:none;
+	font-weight:bold;
+	}

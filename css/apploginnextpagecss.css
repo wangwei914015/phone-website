@@ -1,0 +1,116 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+	font-size:100%;
+	}
+body,html{
+	width:100%;
+	height:100%;
+	}
+/*第二屏页面*/
+.secondpage{
+	width:100%;
+	height:100vh;
+	min-width:320px;
+	max-width:1200px;
+	margin:0 auto;
+	background:#07c8ab url(../image/bgimg2.png) right center no-repeat;
+	background-size:auto 80%;
+	display:flex;
+	flex-flow:column wrap;
+	justify-content:center;
+	align-items:center;
+	font-size:62.5%;
+	}
+.secondpage-div{
+	width:80vw;
+	min-width:270px;
+	max-width:900px;
+	height:20vh;
+	display:flex;
+	justify-content:flex-start;
+	}
+.secondpage-div div{
+	width:62vw;
+	min-width:220px;
+	max-width:900px;
+	height:20vh;
+	border-bottom:1px solid #FFF;
+	display:flex;
+	justify-content:space-between;
+	}
+.secondpage-div div img{
+	width:20vw;
+	max-width:60px;
+	min-height:60px;
+	max-height:80px;
+	min-width:80px;
+	height:20vw;
+	border-radius:50%;
+	}
+.secondpage-div div .secondpage-p{
+	width:36vw;
+	min-width:120px;
+	max-width:170px;
+	height:10vh;
+	font-size:25%;
+	color:#FFF;
+	display:flex;
+	flex-flow:column wrap;
+	justify-content:space-around;
+	font-weight:bold;
+	}
+.secondpage-ul{
+	width:100%;
+	height:55vh;
+	list-style:none;
+	display:flex;
+	flex-flow:column wrap;
+	justify-content:center;
+	}
+.secondpage-ul li{
+	width:81vw;
+	max-width:1100px;
+	height:7vh;
+	display:flex;
+	justify-content:flex-start;
+	align-items:center;
+	font-size:25%;
+	color:#FFF;
+	}
+.secondpage-ul li p{
+	width:22vw;
+	min-width:80px;
+	max-width:150px;
+	height:7vh;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	}
+.secondpage-ul li p:nth-of-type(2){
+	width:18vw;
+	min-width:100px;
+	max-width:150px;
+	justify-content:flex-start;
+	}	
+.secondpage-ul li:nth-of-type(2) p:last-child{
+	width:10vw;
+	min-width:30px;
+	max-width:40px;
+	height:3vh;
+	background:#C00;
+	color:#FFF;
+	border-radius:15px;
+	font-weight:bold;
+	}
+.secondpage-ul li img{
+	width:6vw;
+	min-width:15px;
+	max-width:30px;
+	height:3vh;
+	}
+.secondpage-ul li:hover{
+	background:#1ddfbd;
+	}

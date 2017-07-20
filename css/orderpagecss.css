@@ -1,0 +1,336 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+	font-size:100%;
+	}
+body,html{
+	width:100%;
+	height:100%;
+	}
+/*订单页面样式*/
+article{
+	width:100%;
+	height:100vh;
+	margin:0 auto;
+	min-width:320px;
+	max-width:1200px;
+	position:relative;
+	z-index:1;
+	}
+/*订单页面头部*/
+ header{
+	width:100%;
+	height:22vh;
+	min-width:320px;
+	max-width:1200px;
+	background:#0cd9b2;
+	background-size:100% 100%;
+	display:flex;
+	flex-flow:column wrap;
+	align-items:center;
+	}
+
+/*头部的手机小图标样式*/
+.topdiv{
+	width:100%;
+	height:5vh;
+	display:flex;
+	justify-content:space-between;
+	}
+.topdiv p{
+	width:34vw;
+	height:5vh;
+	min-width:100px;
+	max-width:120px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	}
+.topdiv p:last-child{
+	width:20vw;
+	}
+.topdiv span{
+	font-size:12px;
+	color:#FFF;
+	}
+.topdiv p img{
+	width:25px;
+	height:20px;
+	}
+/*头部的第二部分*/
+header ul{
+	width:100%;
+	height:6vh;
+	list-style:none;
+	display:flex;
+	justify-content:space-around;
+	}
+header ul li{
+	width:27vw;
+	min-width:100px;
+	max-width:120px;
+	height:6vh;
+	color:#FFF;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	}
+header ul li:first-child{
+	font-size:14px;
+	justify-content:flex-start;
+    }
+header ul li:last-child{
+	
+	justify-content:flex-end;
+    }
+header ul li .addimg{
+	width:25px;
+	height:25px;
+	}
+header ul li .addressimg{
+	width:4vw;
+	min-width:10px;
+	min-height:3px;
+	max-width:4px;
+	max-width:16px;
+	height:3vh;
+	}
+header .linebox{
+	width:72vw;
+	min-width:240px;
+	max-width:980px;
+	height:1px;
+	background:#FFF;
+	margin-top:5%;
+	position:relative;
+	z-index:1;
+	}
+header .linebox .fglinebox{
+	width:84vw;
+	min-width:280px;
+	min-height:30px;
+	max-height:100px;
+	max-width:1150px;
+	position:absolute;
+	z-index:2;
+	top:-2vh;
+	left:-6vw;
+	display:flex;
+	justify-content:space-between;
+	align-items:flex-end;
+	}
+header .linebox p {
+	width:16vw;
+	min-width:30px;
+	min-height:30px;
+	max-height:50px;
+	max-width:150px;
+	height:7.8vh;
+	display:flex;
+	flex-flow:column wrap;
+	align-items:center;
+	justify-content:space-between;
+	}
+header .linebox p .linebox-span{
+	width:6vw;
+	min-width:20px;
+	min-height:20px;
+	max-width:30px;
+	max-height:30px;
+	height:6vw;
+	border-radius:50%;
+	background:#FFF;
+	color:#04c5a8;
+	font-weight:bold;
+	text-align:center;
+	font-size:0.8em;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	}
+header .linebox p span{
+	font-size:0.5em;
+	color:#FFF;
+	}
+/*订单页面中间部分样式*/
+.middlesection{
+	width:100%;
+	min-width:320px;
+	max-width:1200px;
+	height:70vh;
+	overflow:auto;
+	background:#FFF;
+	list-style:none;
+	}
+ .middlesection li{
+	width:100%;
+	min-width:320px;
+	max-width:1200px;
+	height:18vh;
+	border-bottom:1px solid #ccc;
+	box-sizing:border-box;
+	position:relative;
+	z-index:2;
+	overflow:hidden;
+	}
+.middlesection li:last-child{
+	border-bottom:none;
+	}
+.middlesection li .middlesection-div{
+	width:140vw;
+	min-width:150px;
+	max-width:1500px;
+	height:18vh;
+	background:#FFF;
+	position:absolute;
+	z-index:1;
+	display:flex;
+	justify-content:flex-start;
+	align-items:center;
+	border-bottom:1px solid #ccc;
+	}
+.middlesection li .middlesection-div:last-of-type{
+	border-bottom:none;
+	}
+ .middlesection li .middlesection-div div:first-child{
+	width:60vw;
+	min-width:100px;
+	max-width:700px;
+	height:8vh;
+	display:flex;
+	flex-flow:column wrap;
+	justify-content:space-between;
+	align-items:center;
+	}
+ .middlesection li div h3{
+	color:#666;
+	}
+ .middlesection li div P{
+	font-size:15%;
+	color:#999;
+	display:flex;
+	justify-content:flex-start;
+	align-items:center;
+	}
+ .middlesection li div p img{
+	width:5vw;
+	min-width:15px;
+	min-height:10px;
+	max-height:40px;
+	max-width:40px;
+	height:3vh;
+	}
+.middlesection li .middlesection-div div:nth-of-type(2){
+	width:40vw;
+	min-width:25px;
+	max-width:500px;
+	height:15vh;
+	display:flex;
+	flex-flow:column wrap;
+	justify-content:space-around;
+	align-items:center;
+	}
+.middlesection li .middlesection-div div:nth-of-type(2) p:first-child{
+	font-size:1.5em;
+	font-weight:bold;
+	color:#000;
+	}
+.middlesection li .middlesection-div div:nth-of-type(2) p:nth-of-child(2){
+	color:#999;
+	font-size:1.2em;
+	font-weight:bold;
+	}
+.middlesection li .middlesection-div div:nth-of-type(2) p:last-child{
+	width:22vw;
+	height:4vh;
+	display:flex;
+	justify-content:space-between;
+	}
+.middlesection li .middlesection-div div:nth-of-type(2) p:last-child button{
+	width:10vw;
+	min-width:10px;
+	min-height:15px;
+	max-height:30px;
+	max-width:100px;
+	height:4vh;
+	border-radius:10%;
+	border:1px solid #03c4a7;
+	color:#03c4a7;
+	font-size:0.8em;
+	background:#FFF;
+}
+.middlesection li .middlesection-div div:last-child{
+	width:22vh;
+	height:18vh;
+	display:flex;
+	justify-content:flex-start;
+	}
+.middlesection li .middlesection-div div:last-child .firstp{
+	width:11vh;
+	height:18vh;
+	background:#ffc803;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	}
+.middlesection li .middlesection-div div:last-child .secondp{
+	width:11vh;
+	height:18vh;
+	background:#e67265;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	}
+.middlesection li .middlesection-div div:last-child p img{
+	width:10vw;
+	min-width:10px;
+	min-height:30px;
+	max-height:40px;
+	max-width:25px;
+	height:6vh;
+	}
+/*订单页面尾部框架*/
+footer{
+	width:100%;
+	min-width:320px;
+	max-width:1200px;
+	height:8vh;
+	background:#f2f2f2;
+	display:flex;
+	justify-content:space-between;
+	align-items:flex-end;
+	}
+footer p{
+	width:62vw;
+	height:8vh;
+	padding-left:8vw;
+	background:#f7f7f7;
+	color:#666;
+	display:flex;
+	align-items:center;
+	justify-content:flex-start;
+	font-size:14px;
+	}
+footer p span{
+	width:10vw;
+	min-width:30px;
+	max-width:80px;
+	height:4vh;
+	background:#C00;
+	border-radius:18px;
+	color:#FFF;
+	font-weight:bold;
+	text-align:center;
+	line-height:4vh;
+	}
+footer input{
+	width:30vw;
+	height:8vh;
+	background:#16dab6;
+	color:#FFF;
+	border:none;
+	font-weight:bold;
+	}
+
